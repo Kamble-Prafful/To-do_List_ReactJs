@@ -1,13 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 62.5%;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Header Bg*/
+
+img {
+  height: 200px;
+  width: 100vw;
+  object-fit: cover;
+  position: relative;
+}
+
+/* Header Items */
+.headerBtn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.add-item {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  color: #000;
+  top: 157px;
+}
+
+.add-icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 0.8;
+  border: 2px solid #000;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+/* To-do Slides */
+
+.main-container {
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container {
+  position: relative;
+  width: 207px;
+  height: 135px;
+  border-radius: 5px;
+  background-color: rgb(60, 191, 145);
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  margin: 0 30px;
+}
+
+.slide-h1 {
+  text-align: start;
+  padding-left: 7px;
+  font-size: 13px;
+  margin: 5px 0 5px 0;
+  font-weight: 400;
+  color: #fff;
+}
+
+p {
+  background-color: #fff;
+  padding: 20px 60px 20px 5px;
+  margin: 0 2px;
+  border-radius: 5px;
+  text-align: start;
+}
+
+.DeleteBtn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 9px;
+  right: 17px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.EditBtn {
+  background-color: rgb(60, 191, 145);
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  top: 90px;
+  right: 12px;
+  font-size: 10px;
+}
+
+/* Add container */
+
+.add-container {
+  height: 300px;
+  width: 500px;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  position: relative;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.add-h1 {
+  border-radius: 2px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: #336e7f;
+  margin-top: 0;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.closeBtn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 7.5px;
+  right: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.title-input,
+.task-input {
+  margin: 20px;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+}
+
+#title {
+  height: 25px;
+}
+
+#title,
+#task {
+  width: 100%;
+  resize: none;
+}
+
+.add-task {
+  display: block;
+  padding: 6px 15px;
+  margin: auto;
+  border-radius: 3px;
+  background-color: #336e7f;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
