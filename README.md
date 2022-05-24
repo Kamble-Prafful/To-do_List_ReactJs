@@ -1,3 +1,30 @@
+
+# To-Do List    
+
+It is just a simple To-do List built using React Js.
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Kamble-Prafful/To-do_List_ReactJs.git
+```
+
+Go to the project directory
+
+```bash
+  cd 
+```
+
+Install dependencies and Start the Server
+
+```bash
+  npm run dev
+```
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
