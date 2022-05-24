@@ -15,7 +15,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd 
+  cd To-do_List_ReactJs/
 ```
 
 Install dependencies and Start the Server
