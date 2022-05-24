@@ -24,6 +24,14 @@ Install dependencies and Start the Server
   npm run dev
 ```
 
+## Features failed to Implement
+
+Blur effect on other elements when TodoForm Modal is open
+
+Closing TodoForm Modal when Adding the Task (Clicking on Add Task Button)
+
+Getting exisiting data in TodoForm container when Editing the To-do Slide
+
 
 # Getting Started with Create React App
 
