@@ -1,3 +1,6 @@
+/* Google Fonts - Lato  */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +9,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 62.5%;
@@ -29,6 +30,25 @@ img {
 }
 
 /* Header Items */
+
+.greetings {
+  position: absolute;
+  top: 35px;
+  left: 50px;
+}
+
+.greetings h1 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.greetings h5 {
+  color: #fff;
+  font-size: 16px;
+  max-width: 360px;
+  font-weight: 400;
+  line-height: 1.5;
+}
 .headerBtn-container {
   display: flex;
   justify-content: center;
@@ -54,12 +74,40 @@ img {
 
 /* To-do Slides */
 
+.form-container {
+  position: absolute;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1111;
+}
+
+.update-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 1111;
+}
+
+.d-none {
+  display: none;
+}
+
 .main-container {
   height: 50vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.is-blurred {
+  filter: blur(2px);
 }
 .container {
   position: relative;
@@ -68,7 +116,7 @@ img {
   border-radius: 5px;
   background-color: rgb(60, 191, 145);
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
-  margin: 0 30px;
+  margin: 30px 30px;
 }
 
 .slide-h1 {
@@ -82,10 +130,13 @@ img {
 
 p {
   background-color: #fff;
-  padding: 20px 60px 20px 5px;
+  max-width: 204px;
+  min-height: 106px;
   margin: 0 2px;
   border-radius: 5px;
   text-align: start;
+  padding: 15px 5px;
+  line-height: 1.4;
 }
 
 .DeleteBtn {
@@ -121,6 +172,12 @@ p {
   position: relative;
   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: #fff;
+}
+
+.main-container::backdrop {
+  opacity: 0.2;
+  background: purple;
 }
 
 .add-h1 {
